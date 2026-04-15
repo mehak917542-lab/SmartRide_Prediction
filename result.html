@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result | CarDekho</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="card">
+            <h2>Estimated Car Price</h2>
+            <p class="prediction">₹ {{ prediction }}</p>
+            <a class="back-btn" href="/">Predict Another</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

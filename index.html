@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarDekho | Car Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="card">
+            <h2>Predict Your Car's Price</h2>
+            <form action="/predict" method="POST">
+                <div class="input-group">
+                    <input type="text" name="car_name" placeholder="Car Name" required>
+                    <input type="text" name="brand" placeholder="Brand" required>
+                    <input type="text" name="model" placeholder="Model" required>
+                </div>
+                <div class="input-group">
+                    <input type="number" name="vehicle_age" placeholder="Vehicle Age (Years)" required>
+                    <input type="number" name="km_driven" placeholder="Kilometers Driven" required>
+                    <input type="number" name="seats" placeholder="Number of Seats" required>
+                </div>
+                <div class="input-group">
+                    <select name="seller_type" required>
+                        <option value="">Seller Type</option>
+                        <option value="Individual">Individual</option>
+                        <option value="Dealer">Dealer</option>
+                        <option value="Trustmark Dealer">Trustmark Dealer</option>
+                    </select>
+
+                    <select name="fuel_type" required>
+                        <option value="">Fuel Type</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="CNG">CNG</option>
+                        <option value="LPG">LPG</option>
+                        <option value="Electric">Electric</option>
+                    </select>
+
+                    <select name="transmission_type" required>
+                        <option value="">Transmission</option>
+                        <option value="Manual">Manual</option>
+                        <option value="Automatic">Automatic</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="number" step="0.01" name="mileage" placeholder="Mileage (km/l)" required>
+                    <input type="number" name="engine" placeholder="Engine (CC)" required>
+                    <input type="number" step="0.1" name="max_power" placeholder="Max Power (BHP)" required>
+                </div>
+                <button type="submit">Predict Price</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
