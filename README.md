@@ -20,10 +20,6 @@ This project provides a web application to predict the price of used cars based 
     * Max Power (BHP)
 **Machine Learning Powered:** Utilizes a pre-trained machine learning model for accurate predictions.
 
-## Live Website
-
-You can access the live prediction website here:https://web-production-f5ded.up.railway.app/
-
 ## Technologies Used
 
 * **Frontend:** HTML, CSS (implied by the web interface)
