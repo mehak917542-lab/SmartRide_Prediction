@@ -1,4 +1,4 @@
-# Used Car Price Prediction
+# SmartRide_Prediction
 
 This project provides a web application to predict the price of used cars based on various features. The application is built using Flask and leverages a machine learning model trained on a dataset of used car specifications.
 
