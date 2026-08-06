@@ -7,7 +7,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 import joblib
 
 #Load your dataset
-df = pd.read_csv(r"C:\Users\ayush\OneDrive\Desktop\cardekho_dataset.csv") 
+df = pd.read_csv(r"cardekho_dataset.csv") 
 
 #Define features (X) and target (y)
 X = df.drop(columns=['selling_price', 'car_name'])  # Drop target + irrelevant
